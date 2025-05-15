@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-teal: #007b77;
+  --primary-orange: #ff8a2a;
+  --background-beige: #e8d5b5;
+  --text-dark: #333333;
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-white;
+  }
+}
+
+@layer utilities {
+  .text-primary-teal {
+    color: var(--primary-teal);
+  }
+
+  .bg-primary-teal {
+    background-color: var(--primary-teal);
+  }
+
+  .border-primary-teal {
+    border-color: var(--primary-teal);
+  }
+
+  .text-primary-orange {
+    color: var(--primary-orange);
+  }
+
+  .bg-primary-orange {
+    background-color: var(--primary-orange);
+  }
+
+  .border-primary-orange {
+    border-color: var(--primary-orange);
+  }
+
+  .bg-background-beige {
+    background-color: var(--background-beige);
+  }
+}
